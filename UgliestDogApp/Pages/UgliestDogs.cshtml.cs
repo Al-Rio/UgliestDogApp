@@ -53,7 +53,7 @@ using System.Collections.Generic;
        }
 
         // Helper method that retrieves a specific dog by its ID from the database
-        // Returns all details of the duck
+        // Returns all details of the dog
        private Dog GetDogById(int id)
        {
            using (var connection = new SqliteConnection("Data Source=UgliestDogs.db"))
@@ -81,7 +81,7 @@ using System.Collections.Generic;
        }
    }
 
-    // Simple model class representing a dog
+    // Simple model class representing a dog.
    public class Dog
    {
        public int Id { get; set; }
